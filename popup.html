@@ -1,0 +1,98 @@
+<!doctype html>
+  <head>
+    <title> Video Search Tool </title>
+	<meta name="author" content="Anuj Shah">
+	<style>
+		div.hidden {display: none;}
+	</style>
+  </head>
+  <body>
+	<form id = "site">
+		<input id="y" type="radio" name="video" value="youtube">
+		<label for="y">YouTube</label>
+		<input id="vim" type="radio" name="video" value="vimeo">
+		<label for="vim">Vimeo</label>
+		<input id="h" type="radio" name="video" value="hulu">
+		<label for="h">Hulu</label>
+		<input id="t" type="radio" name="video" value="twitch">
+		<label for="t">Twitch</label>
+	</form>
+    <div id = "youtube">
+		<form method = "get" id = "url" action = "http://www.youtube.com/results" target = "_blank">
+			<div id = "sty" style = "border:5px solid red; padding:2px; width:25em;">
+				<table border = "0" cellpadding = "0">
+					<tr><td>
+						<input 
+							type = "text" 
+							spellcheck = "false"
+							name = "search_query" 
+							size = "28"
+							maxlength = "255" 
+							id = "input" 
+							placeholder = "Search YouTube"/>
+						<input style = "width:4.65em;" type = "submit" value = "Search"/>
+					</td></tr>
+				</table>
+			</div>
+		</form>
+	</div>
+	<div id = "vimeo">
+		<form method = "get" id = "url" action = "http://www.vimeo.com/search" target = "_blank">
+			<div id = "sty" style = "border:5px solid rgb(0,200,255); padding:2px; width:25em;">
+				<table border = "0" cellpadding = "0">
+					<tr><td>
+						<input
+							type = "text"
+							spellcheck = "false"
+							name = "q"
+							size = "28"
+							maxlength = "255"
+							id = "input"
+							placeholder = "Search Vimeo"/>
+						<input style = "width:4.65em;" type = "submit" value = "Search"/>
+					</td></tr>
+				</table>
+			</div>
+		</form>
+	</div>
+	<div id = "hulu">
+		<form method = "get" id = "url" action = "http://www.hulu.com/search" target = "_blank">
+			<div id = "sty" style = "border:5px solid rgb(92,214,92); padding:2px; width:25em;">
+				<table border = "0" cellpadding = "0">
+					<tr><td>
+						<input 
+							type = "text" 
+							spellcheck = "false"
+							name = "q" 
+							size = "28"
+							maxlength = "255" 
+							id = "input" 
+							placeholder = "Search Hulu"/>
+						<input style = "width:4.65em;" type = "submit" value = "Search"/>
+					</td></tr>
+				</table>
+			</div>
+		</form>
+	</div>
+	<div id = "twitch">
+		<form method = "get" id = "url" action = "http://www.twitch.tv/search" target = "_blank">
+			<div id = "sty" style = "border:5px solid purple; padding:2px; width:25em;">
+				<table border = "0" cellpadding = "0">
+					<tr><td>
+						<input 
+							type = "text" 
+							spellcheck = "false"
+							name = "query" 
+							size = "28"
+							maxlength = "255" 
+							id = "input" 
+							placeholder = "Search Twitch"/>
+						<input style = "width:4.65em;" type = "submit" value = "Search"/>
+					</td></tr>
+				</table>
+			</div>
+		</form>
+	</div>
+	<script src = "popup.js"> </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "Video Search Tool",
+  "author": "Anuj Shah",
+  "description": "Easily search for online videos.",
+  "version": "1.0",
+  "icons":
+  {
+	"16": "16.png",
+	"32": "32.png",
+	"48": "48.png",
+	"128": "128.png"
+  },
+  "browser_action": 
+  {
+    "default_icon": "video.png",
+    "default_popup": "popup.html",
+    "default_title": "Search for videos!"
+  },
+  "manifest_version": 2
+}
